@@ -29,7 +29,7 @@ Route::middleware([
 });
 
 Route::controller(LivewireTestController::class)
-->prefix('livewire_test')->group(function(){
-    Route::get('index', 'index');
-    Route::get('register', 'register');
+->prefix('livewire_test')->name('livewire_test.')->group(function(){
+    Route::get('index', 'index')->name('index');
+    Route::get('register', 'register')->name('register');
 });
