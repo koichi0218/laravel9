@@ -4,6 +4,10 @@
     <div class="mb-8"></div>
 
     {{ $name }} <br>
-    <input type="text" wire:model.defer="name"><br>
-
+    <input type="text" wire:model="name"><br>
+    <!-- <input type="text" wire:model="name"><br>
+    <input type="text" wire:model.debounce.2000ms="name"><br>
+    <input type="text" wire:model.lazy="name"><br> -->
+    <br>
+    <button wire:mouseover="mouseOver">マウスを合わせる</button>
 </div>
