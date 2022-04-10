@@ -13,6 +13,8 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //一覧
     public function index()
     {
         //
@@ -23,6 +25,8 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //新規作成
     public function create()
     {
         //
@@ -34,6 +38,8 @@ class EventController extends Controller
      * @param  \App\Http\Requests\StoreEventRequest  $request
      * @return \Illuminate\Http\Response
      */
+
+     //作成処理
     public function store(StoreEventRequest $request)
     {
         //
@@ -45,6 +51,8 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
+
+     //詳細
     public function show(Event $event)
     {
         //
@@ -68,6 +76,8 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
+
+     //更新
     public function update(UpdateEventRequest $request, Event $event)
     {
         //
@@ -79,6 +89,8 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
+
+     //削除
     public function destroy(Event $event)
     {
         //
