@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -37,7 +38,6 @@ Route::prefix('manager')
 ->middleware('can:manager-higher')->group(function(){
     Route::resource('events', EventCollector::class);
 });
-
 Route::middleware('can:user-higher')->group(function(){
     Route::get('index', function () {
     dd('user');
