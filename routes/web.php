@@ -36,7 +36,7 @@ Route::middleware([
 
 Route::prefix('manager')
 ->middleware('can:manager-higher')->group(function(){
-    Route::resource('events', EventCollector::class);
+    Route::resource('events', EventController::class);
 });
 Route::middleware('can:user-higher')->group(function(){
     Route::get('index', function () {
