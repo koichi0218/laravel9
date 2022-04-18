@@ -17,7 +17,7 @@ class EventController extends Controller
      //一覧
     public function index()
     {
-        //
+        return view('manager.events.index');
     }
 
     /**
